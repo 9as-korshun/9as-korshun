@@ -1,55 +1,77 @@
 <!doctype html>
-<html class="p-0 m-0" data-bs-theme="light" id="html" lang="de">
+<html class="p-0 m-0" lang="en">
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
   <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" rel="stylesheet">
-  <title></title>
-
-  <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 
   <style>
-    .fotorama__caption {
-      display: flex;
-      font-family: 'Marck Script', serif;
-      justify-content: center;
-    }
-
-    body {
-      font-family: 'Marck Script', serif;
-
+    * {
+      font-family: 'Noto', serif;
     }
 
     h1 {
-      font-size: 60px;
+      font-size: 30px;
     }
 
     h2 {
-      font-size: 20px;
+      font-size: 15px;
+    }
+
+    .fotorama {
+      max-width: 100%;
+    }
+
+    .fotorama__wrap {
+      width: 100% !important;
+    }
+
+    .fotorama__caption {
+      display: flex;
+      justify-content: center;
     }
   </style>
+
+  <title></title>
 </head>
 
-<body class="d-flex flex-column align-items-center justify-content-center p-4">
-<h1>Daria</h1>
-<nav class="d-flex flex-row my-3">
-  <h2 class="list-group-item mx-4">An item</h2>
-  <h2 class="list-group-item mx-4">A second item</h2>
-  <h2 class="list-group-item mx-4">A third item</h2>
-  <h2 class="list-group-item mx-4">A forth item</h2>
+<body class="d-flex flex-column align-items-center justify-content-center p-0 m-0">
+<h1 class="my-3">Daria</h1>
+<nav class="d-flex flex-row flex-wrap">
+  <h2 class="mx-4">
+    <a href="" title="">Item 1</a>
+  </h2>
+  <h2 class="mx-4">
+    <a href="" title="">Item 2</a>
+  </h2>
+  <h2 class="mx-4">
+    <a href="" title="">Item 3</a>
+  </h2>
+  <h2 class="mx-4">
+    <a href="" title="">Item 4</a>
+  </h2>
 </nav>
-<main class="fotorama" data-allowfullscreen="native" data-arrows="false" data-hash="true" data-loop="true" data-maxheight="70%" data-minheight="50%" data-nav="thumbs" data-shadows="true" data-thumbmargin="20">
-  <img data-caption="Поль Деларош. граф Сальванди— великий магистр Университета, 1846" data-full="https://upload.wikimedia.org/wikipedia/commons/f/f3/Paul_Delaroche_-_Le_comte_Narcisse-Achille_de_Salvandy_%281846%29.JPG" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Paul_Delaroche_-_Le_comte_Narcisse-Achille_de_Salvandy_%281846%29.JPG/409px-Paul_Delaroche_-_Le_comte_Narcisse-Achille_de_Salvandy_%281846%29.JPG">
-  <img data-caption="Some caption" data-full="https://placehold.co/4000x2000" src="https://placehold.co/600x400">
-  <img data-caption="Some other caption" data-full="https://placehold.co/2000x4000" src="https://placehold.co/400x600">
-  <img data-full="https://placehold.co/2000x7000" src="https://placehold.co/500x800">
-  <img data-full="https://placehold.co/40000x4000" src="https://placehold.co/600x600">
-  <a href="https://youtube.com/watch?v=C3lWwBslWqg">Desert Rose</a>
-  <a href="https://vimeo.com/61527416">Celestial Dynamics</a>
+<main class="">
+  <div class="fotorama p-3">
+    <img alt="" data-caption="Поль Деларош. граф Сальванди— , 1846" data-full="https://upload.wikimedia.org/wikipedia/commons/f/f3/Paul_Delaroche_-_Le_comte_Narcisse-Achille_de_Salvandy_%281846%29.JPG" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Paul_Delaroche_-_Le_comte_Narcisse-Achille_de_Salvandy_%281846%29.JPG/409px-Paul_Delaroche_-_Le_comte_Narcisse-Achille_de_Salvandy_%281846%29.JPG">
+    <img alt="" data-caption="Some caption" data-full="https://placehold.co/4000x2000" src="https://placehold.co/600x400">
+    <img alt="" data-caption="Some other caption" data-full="https://placehold.co/2000x4000" src="https://placehold.co/400x600">
+    <img alt="" data-full="https://placehold.co/2000x7000" src="https://placehold.co/500x800">
+    <img alt="" data-full="https://placehold.co/40000x4000" src="https://placehold.co/600x600">
+    <a href="https://youtube.com/watch?v=C3lWwBslWqg" title="">Desert Rose</a>
+    <a href="https://vimeo.com/61527416" title="">Celestial Dynamics</a>
+  </div>
+  <div></div>
 </main>
-<footer></footer>
+
+<script>
+  $('.fotorama').fotorama({
+    allowfullscreen: 'native', arrows: 'false', hash: 'true', loop: 'true', maxheight: '70%', maxwidth: '100%', minheight: '70%', nav: 'thumbs', thumbmargin: '20', trackpad: 'true', thumbwidth: '75px', thumbheight: '75px',
+  });
+</script>
 </body>
 </html>
