@@ -4,15 +4,26 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <title>Test</title>
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
   <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
+    * {
+      font-family: 'Montserrat Alternates', serif;
+      font-size: 14px;
+    }
+
+    h2 {
+      font-size: 1.5em;
+    }
+
     nav {
       cursor: pointer;
     }
 
     nav img {
-      max-height: 200px;
+      max-height: 225px;
     }
 
     .openseadragon-container :focus {
@@ -21,9 +32,10 @@
   </style>
 </head>
 <body>
-<h1 class="d-flex justify-content-center my-3">Daria</h1>
+<h1 class="d-flex justify-content-center mt-3">Daria</h1>
+<h2 class="d-flex justify-content-center">Artist & Illustrator</h2>
 
-<nav class="nav justify-content-center my-3">
+<!-- <nav class="nav justify-content-center mt-2 mb-3">
   <div class="nav-item">
     <a class="nav-link link-secondary" href="#">Link</a>
   </div>
@@ -36,72 +48,107 @@
   <div class="nav-item">
     <a class="nav-link link-secondary" href="#">Link</a>
   </div>
-</nav>
+</nav> -->
 
-<nav class="container d-flex flex-wrap">
-  <img class="p-2" data-bs-target="#modal1" data-bs-toggle="modal" src="1.jpeg">
-  <img class="p-2" data-bs-target="#modal2" data-bs-toggle="modal" src="2.jpeg">
-  <img class="p-2" data-bs-target="#modal3" data-bs-toggle="modal" src="3.jpeg">
-  <img class="p-2" data-bs-target="#modal4" data-bs-toggle="modal" src="https://placehold.co/500x300">
-  <img class="p-2" data-bs-target="#modal5" data-bs-toggle="modal" src="https://placehold.co/400x600">
-  <img class="p-2" data-bs-target="#modal6" data-bs-toggle="modal" src="https://placehold.co/600x600">
-  <img class="p-2" data-bs-target="#modal7" data-bs-toggle="modal" src="https://placehold.co/800x300">
-  <img class="p-2" data-bs-target="#modal8" data-bs-toggle="modal" src="https://placehold.co/450x300">
-  <img class="p-2" data-bs-target="#modal9" data-bs-toggle="modal" src="https://placehold.co/600x400">
-  <img class="p-2" data-bs-target="#modal10" data-bs-toggle="modal" src="https://placehold.co/600x600">
+<nav class="container d-flex flex-wrap justify-content-center">
+  <img class="p-3" data-bs-target="#modal2" data-bs-toggle="modal" src="2.jpeg">
+  <img class="p-3" data-bs-target="#modal3" data-bs-toggle="modal" src="3.jpeg">
+  <img class="p-3" data-bs-target="#modal1" data-bs-toggle="modal" src="1.jpeg">
+  <!-- <img class="p-3" data-bs-target="#modal4" data-bs-toggle="modal" src="https://placehold.co/500x300"> -->
+  <!-- <img class="p-3" data-bs-target="#modal5" data-bs-toggle="modal" src="https://placehold.co/400x600"> -->
+  <!-- <img class="p-3" data-bs-target="#modal6" data-bs-toggle="modal" src="https://placehold.co/600x600"> -->
+  <!-- <img class="p-3" data-bs-target="#modal7" data-bs-toggle="modal" src="https://placehold.co/800x300"> -->
+  <!-- <img class="p-3" data-bs-target="#modal8" data-bs-toggle="modal" src="https://placehold.co/450x300"> -->
+  <!-- <img class="p-3" data-bs-target="#modal9" data-bs-toggle="modal" src="https://placehold.co/600x400"> -->
 </nav>
 
 <div aria-hidden="true" aria-labelledby="modalLabel1" class="modal fade" id="modal1" tabindex="-1">
   <div class="modal-dialog modal-fullscreen">
     <div class="modal-content align-items-end">
-      <div class="modal-body d-flex flex-row p-0">
+      <div class="modal-body d-flex align-items-center p-0">
         <a class="d-flex" href="3.jpeg" target="_blank">
           <div id="img1"></div>
         </a>
-        <div class="py-3 px-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, commodi corporis cumque debitis deserunt dignissimos doloremque ducimus excepturi exercitationem facilis id inventore iste magnam magni molestias mollitia nam necessitatibus nemo nisi nulla numquam optio pariatur qui quos recusandae repellendus saepe sint tempora tempore ullam. Adipisci doloribus dolorum earum esse, illo ipsum iusto labore mollitia quos repellendus reprehenderit repudiandae saepe ut velit vitae! Accusamus accusantium alias animi at culpa exercitationem, facilis fugit ipsum itaque iure laudantium molestiae numquam odio officia omnis quam recusandae saepe sed tempora, velit. Consequatur dicta dolore, doloribus error laudantium mollitia, odio optio praesentium quos saepe suscipit voluptate!</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div aria-hidden="true" aria-labelledby="modalLabel1" class="modal fade" id="modal2" tabindex="-1">
-  <div class="modal-dialog modal-fullscreen">
-    <div class="modal-content align-items-end">
-      <div class="modal-body d-flex flex-row p-0">
-        <a class="d-flex" href="3.jpeg" target="_blank">
-          <div id="img2"></div>
-        </a>
-        <div class="py-3 px-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deleniti fuga quia quibusdam totam! A amet animi consequatur cum dicta dolore ea eligendi hic illo iure minus necessitatibus, omnis quasi sunt tempore ut vel voluptas! Ab accusantium amet architecto autem debitis deserunt dolor dolorum error et exercitationem fuga fugiat fugit harum illum inventore ipsum itaque, maxime minus nemo, neque numquam obcaecati perferendis praesentium quas quisquam repellat reprehenderit tempora ullam ut vel? Accusantium aperiam architecto aspernatur doloremque eaque eius explicabo iste maiores mollitia qui, sunt vel velit vero. Adipisci aliquid aperiam assumenda consectetur consequuntur culpa cum doloremque, ex exercitationem facilis impedit, iste maxime nostrum numquam placeat qui quidem, quis quo repudiandae saepe totam vel veniam veritatis voluptas voluptatibus! Alias aliquam aliquid autem commodi cumque dolorum eum facere fuga, laborum maiores modi necessitatibus numquam odit perspiciatis porro quos sapiente sequi sint vitae voluptatum. Consectetur consequatur debitis deleniti est expedita nemo nisi quia.
+        <div class="px-5" style="min-width: 350px;">
+          <h3>Lorem ipsum dolor</h3>
+          <div>2023</div>
+          <div>Oil on canvas</div>
+          <div>17.5 x 27.5 in</div>
+          <h4>Description</h4>
+          <div>lorem20</div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<div aria-hidden="true" aria-labelledby="modalLabel1" class="modal fade" id="modal3" tabindex="-1">
+<div aria-hidden="true" aria-labelledby="modalLabel2" class="modal fade" id="modal2" tabindex="-1">
   <div class="modal-dialog modal-fullscreen">
     <div class="modal-content align-items-end">
-      <div class="modal-body d-flex flex-row p-0">
+      <div class="modal-body d-flex align-items-center p-0">
         <a class="d-flex" href="3.jpeg" target="_blank">
-          <div id="img3"></div>
+          <div id="img2"></div>
         </a>
-        <div class="py-3 px-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur cupiditate dolore eius eum id libero mollitia nulla officiis placeat, provident quam recusandae repudiandae sequi veritatis! Adipisci aliquid atque blanditiis cum dignissimos enim impedit in iure, libero maiores necessitatibus neque nesciunt nisi pariatur repudiandae rerum sunt tempore vitae. Eaque, temporibus?</div>
+        <div class="px-5" style="min-width: 350px;">
+          <h3>Lorem ipsum</h3>
+          <div>2022</div>
+          <div>Photoshop</div>
+          <div>2000 x 4000 px</div>
+        </div>
       </div>
     </div>
   </div>
 </div>
+
+<div aria-hidden="true" aria-labelledby="modalLabel3" class="modal fade" id="modal3" tabindex="-1">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content align-items-end">
+      <div class="modal-body d-flex align-items-center p-0">
+        <a class="d-flex" href="3.jpeg" target="_blank">
+          <div id="img3"></div>
+        </a>
+        <div class="px-5" style="min-width: 350px;">
+          <h3>Lorem ipsum</h3>
+          <div>2022</div>
+          <div>Photoshop</div>
+          <div>2000 x 4000 px</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div aria-hidden="true" aria-labelledby="modalLabel4" class="modal fade" id="modal4" tabindex="-1">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content align-items-end">
+      <div class="modal-body d-flex align-items-center p-0">
+        <a class="d-flex" href="https://i.imgur.com/FX1HVet.png" target="_blank">
+          <div id="img4"></div>
+        </a>
+        <div class="px-5" style="min-width: 350px;">
+          <h3>Lorem ipsum</h3>
+          <div>2022</div>
+          <div>Photoshop</div>
+          <div>2000 x 4000 px</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="fixed-bottom d-flex justify-content-center p-4">Copyright © 2023 Daria - Artist & Illustrator</footer>
 
 <script crossorigin="anonymous" src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 <script crossorigin="anonymous" src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
 <script>
   $('.modal [id^=img]').each(function () {
-    $(this).width($(document).width() / 1.5).height($(document).height());
+    $(this).width($(document).width() - $(this).parent().next().width()).height($(document).height());
   });
 
   $(window).on('resize', function () {
     $('.modal [id^=img]').each(function () {
-      $(this).width($(document).width() / 1.5).height($(document).height());
+      $(this).width($(document).width() - $(this).parent().next().width()).height($(document).height());
     });
   });
 </script>
@@ -111,6 +158,7 @@
   OpenSeadragon({ showNavigationControl: false, gestureSettingsMouse: { clickToZoom: false }, id: 'img1', tileSources: { type: 'image', url: '1.jpeg' }, defaultZoomLevel: 0.5, minZoomLevel: 0.1, maxZoomLevel: 100 });
   OpenSeadragon({ showNavigationControl: false, gestureSettingsMouse: { clickToZoom: false }, id: 'img2', tileSources: { type: 'image', url: '2.jpeg' }, defaultZoomLevel: 0.5, minZoomLevel: 0.1, maxZoomLevel: 100 });
   OpenSeadragon({ showNavigationControl: false, gestureSettingsMouse: { clickToZoom: false }, id: 'img3', tileSources: { type: 'image', url: '3.jpeg' }, defaultZoomLevel: 0.5, minZoomLevel: 0.1, maxZoomLevel: 100 });
+  OpenSeadragon({ showNavigationControl: false, gestureSettingsMouse: { clickToZoom: false }, id: 'img4', tileSources: { type: 'image', url: 'https://i.imgur.com/FX1HVet.png' }, defaultZoomLevel: 0.5, minZoomLevel: 0.1, maxZoomLevel: 100 });
 </script>
 </body>
 </html>
